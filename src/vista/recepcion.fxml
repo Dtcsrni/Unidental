@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.DatePicker?>
@@ -15,14 +18,14 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<?import com.jfoenix.controls.JFXTextField?>
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1062.0" prefWidth="1375.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1118.0" prefWidth="1414.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
   <children>
-      <AnchorPane accessibleRole="BUTTON" maxHeight="1.7976931348623157E308" prefHeight="689.0" prefWidth="1280.0" style="-fx-background-color: ffff;" VBox.vgrow="ALWAYS">
+      <AnchorPane accessibleRole="BUTTON" maxHeight="1.7976931348623157E308" prefHeight="1089.0" prefWidth="1414.0" style="-fx-background-color: ffff;" VBox.vgrow="ALWAYS">
          <children>
-            <AnchorPane cache="true" cacheHint="SPEED" layoutX="219.0" layoutY="333.0" prefHeight="723.0" prefWidth="1151.0" style="-fx-background-color: ffff; -fx-background-radius: 2em;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="219.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="333.0">
+            <AnchorPane cache="true" cacheHint="SPEED" layoutX="240.0" layoutY="303.0" prefHeight="777.0" prefWidth="1169.0" style="-fx-background-color: ffff; -fx-background-radius: 2em;" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="303.0">
                <effect>
                   <DropShadow />
                </effect>
@@ -82,7 +85,7 @@
                         <Font name="Dubai Regular" size="18.0" />
                      </font>
                   </Label>
-                  <Label layoutX="14.0" layoutY="679.0" prefHeight="44.0" prefWidth="238.0" text="+Teléfono">
+                  <Label layoutX="14.0" layoutY="679.0" prefHeight="44.0" prefWidth="238.0" text="+Teléfono" AnchorPane.leftAnchor="14.0">
                      <font>
                         <Font name="Dubai Regular" size="18.0" />
                      </font>
@@ -184,12 +187,12 @@
                         <Font name="Dubai Bold" size="15.0" />
                      </font>
                   </JFXTextField>
-                  <JFXTextField layoutX="195.0" layoutY="677.0" prefHeight="25.0" prefWidth="476.0">
+                  <JFXTextField layoutX="195.0" layoutY="677.0" prefHeight="25.0" prefWidth="476.0" AnchorPane.leftAnchor="195.0">
                      <font>
                         <Font name="Dubai Bold" size="15.0" />
                      </font>
                   </JFXTextField>
-                  <Label alignment="CENTER" contentDisplay="TOP" layoutX="336.0" layoutY="167.0" prefHeight="6.0" prefWidth="292.0" text="Datos Generales">
+                  <Label alignment="CENTER" contentDisplay="TOP" layoutX="53.0" layoutY="167.0" prefHeight="6.0" prefWidth="292.0" text="Datos Generales">
                      <font>
                         <Font name="Dubai Bold" size="18.0" />
                      </font>
@@ -199,54 +202,60 @@
                         <Font name="Dubai Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Label layoutX="683.0" layoutY="413.0" prefHeight="44.0" prefWidth="413.0" text="+Nombre de la madre, padre o tutor del menor de edad:">
+                  <Label layoutX="705.0" layoutY="196.0" prefHeight="44.0" prefWidth="413.0" text="+Nombre de la madre, padre o tutor del menor de edad:">
                      <font>
                         <Font name="Dubai Regular" size="18.0" />
                      </font>
                   </Label>
-                  <JFXTextField layoutX="683.0" layoutY="455.0" prefHeight="38.0" prefWidth="453.0">
+                  <JFXTextField layoutX="705.0" layoutY="220.0" prefHeight="38.0" prefWidth="453.0">
                      <font>
                         <Font name="Dubai Bold" size="15.0" />
                      </font>
                   </JFXTextField>
-                  <Label layoutX="683.0" layoutY="499.0" prefHeight="44.0" prefWidth="413.0" text="+Máximo grado de estudios:">
+                  <Label layoutX="705.0" layoutY="264.0" prefHeight="44.0" prefWidth="413.0" text="+Máximo grado de estudios:">
                      <font>
                         <Font name="Dubai Regular" size="18.0" />
                      </font>
                   </Label>
-                  <ChoiceBox layoutX="683.0" layoutY="538.0" prefHeight="25.0" prefWidth="379.0" />
-                  <Label layoutX="683.0" layoutY="565.0" prefHeight="44.0" prefWidth="413.0" text="+Ocupación:">
+                  <ChoiceBox layoutX="705.0" layoutY="303.0" prefHeight="25.0" prefWidth="379.0" />
+                  <Label layoutX="705.0" layoutY="330.0" prefHeight="44.0" prefWidth="413.0" text="+Ocupación:">
                      <font>
                         <Font name="Dubai Regular" size="18.0" />
                      </font>
                   </Label>
-                  <JFXTextField layoutX="771.0" layoutY="565.0" prefHeight="38.0" prefWidth="366.0">
+                  <JFXTextField layoutX="793.0" layoutY="330.0" prefHeight="38.0" prefWidth="366.0">
                      <font>
                         <Font name="Dubai Bold" size="15.0" />
                      </font>
                   </JFXTextField>
-                  <Label layoutX="683.0" layoutY="609.0" prefHeight="44.0" prefWidth="413.0" text="+Estado civil:">
+                  <Label layoutX="705.0" layoutY="374.0" prefHeight="44.0" prefWidth="413.0" text="+Estado civil:">
                      <font>
                         <Font name="Dubai Regular" size="18.0" />
                      </font>
                   </Label>
-                  <ChoiceBox layoutX="784.0" layoutY="619.0" prefHeight="25.0" prefWidth="351.0" />
-                  <Label layoutX="683.0" layoutY="647.0" prefHeight="44.0" prefWidth="413.0" text="+Derechohabiencia">
+                  <ChoiceBox layoutX="806.0" layoutY="384.0" prefHeight="25.0" prefWidth="351.0" />
+                  <Label layoutX="705.0" layoutY="412.0" prefHeight="44.0" prefWidth="413.0" text="+Derechohabiencia">
                      <font>
                         <Font name="Dubai Regular" size="18.0" />
                      </font>
                   </Label>
-                  <ChoiceBox layoutX="828.0" layoutY="657.0" prefHeight="25.0" prefWidth="308.0" />
+                  <ChoiceBox layoutX="850.0" layoutY="422.0" prefHeight="25.0" prefWidth="308.0" />
+                  <Label layoutX="705.0" layoutY="452.0" prefHeight="44.0" prefWidth="413.0" text="+Motivo de la consulta:">
+                     <font>
+                        <Font name="Dubai Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextArea layoutX="705.0" layoutY="495.0" prefHeight="185.0" prefWidth="453.0" />
                </children>
             </AnchorPane>
-            <AnchorPane layoutY="232.0" maxHeight="1.7976931348623157E308" prefHeight="823.0" prefWidth="216.0" style="-fx-background-color: ffff; -fx-background-radius: 0.5em;" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="232.0">
+            <AnchorPane layoutY="232.0" maxHeight="1.7976931348623157E308" prefHeight="850.0" prefWidth="216.0" style="-fx-background-color: ffff; -fx-background-radius: 0.5em;" AnchorPane.bottomAnchor="36.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="232.0">
                <children>
                   <AnchorPane layoutX="-2.0" prefHeight="602.0" prefWidth="65.0" style="-fx-background-color: ffff; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-2.0" AnchorPane.topAnchor="0.0">
                      <effect>
                         <DropShadow />
                      </effect>
                   </AnchorPane>
-                  <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutY="114.0" prefHeight="113.0" prefWidth="216.0" style="-fx-background-color: FF93A0; -fx-background-radius: 5em; -fx-cursor: hand;" text="Ingresar Paciente" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="114.0">
+                  <JFXButton buttonType="RAISED" layoutY="114.0" prefHeight="113.0" prefWidth="216.0" style="-fx-background-color: FF93A0; -fx-background-radius: 5em; -fx-cursor: hand;" text="Ingresar Paciente" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="114.0">
                      <graphic>
                         <ImageView fitHeight="95.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" translateX="-15.0">
                            <image>
@@ -261,7 +270,8 @@
                         <Font name="Dubai Bold" size="20.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutY="301.0" prefHeight="113.0" prefWidth="216.0" style="-fx-background-color: FF93A0; -fx-background-radius: 5em; -fx-cursor: hand;" text="Consultar Registros" textAlignment="CENTER" wrapText="true">
+                  <Circle fill="#f3c3a0" layoutX="216.0" layoutY="171.0" mouseTransparent="true" radius="19.0" stroke="BLACK" strokeType="INSIDE" />
+                  <JFXButton buttonType="RAISED" layoutY="301.0" prefHeight="113.0" prefWidth="216.0" style="-fx-background-color: FF93A0; -fx-background-radius: 5em; -fx-cursor: hand;" text="Consultar Registros" wrapText="true">
                      <graphic>
                         <ImageView fitHeight="95.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" translateX="-15.0">
                            <image>
@@ -276,6 +286,7 @@
                         <Font name="Dubai Bold" size="20.0" />
                      </font>
                   </JFXButton>
+                  <Circle fill="#f3c3a0" layoutX="216.0" layoutY="358.0" mouseTransparent="true" radius="19.0" stroke="BLACK" strokeType="INSIDE" />
                </children>
                <effect>
                   <DropShadow />
@@ -298,7 +309,7 @@
                   <DropShadow />
                </effect>
             </AnchorPane>
-            <AnchorPane layoutX="180.0" layoutY="25.0" prefHeight="200.0" prefWidth="334.0" style="-fx-background-color: ffff; -fx-background-radius: 1em;" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="25.0">
+            <AnchorPane layoutX="180.0" layoutY="26.0" prefHeight="200.0" prefWidth="334.0" style="-fx-background-color: ffff; -fx-background-radius: 1em;" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="26.0">
                <children>
                   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="146.0" prefHeight="54.0" prefWidth="301.0" text="Carlos Hernandez Herrera" textAlignment="CENTER" textFill="#727176">
                      <font>
@@ -323,7 +334,7 @@
                   <DropShadow />
                </effect>
             </AnchorPane>
-            <AnchorPane layoutX="521.0" layoutY="27.0" prefHeight="199.0" prefWidth="308.0" style="-fx-background-color: ffff; -fx-background-radius: 2em;" AnchorPane.leftAnchor="521.0" AnchorPane.topAnchor="27.0">
+            <AnchorPane layoutX="521.0" layoutY="27.0" prefHeight="200.0" prefWidth="308.0" style="-fx-background-color: ffff; -fx-background-radius: 2em;" AnchorPane.leftAnchor="521.0" AnchorPane.topAnchor="27.0">
                <children>
                   <ImageView fitHeight="200.0" fitWidth="281.0" layoutX="19.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -335,7 +346,7 @@
                   <DropShadow height="38.79" radius="18.155" width="35.83" />
                </effect>
             </AnchorPane>
-            <AnchorPane layoutX="836.0" layoutY="28.0" prefHeight="199.0" prefWidth="258.0" style="-fx-background-color: ffff; -fx-background-radius: 1em;" AnchorPane.leftAnchor="836.0" AnchorPane.topAnchor="28.0">
+            <AnchorPane layoutX="836.0" layoutY="27.0" prefHeight="200.0" prefWidth="258.0" style="-fx-background-color: ffff; -fx-background-radius: 1em;" AnchorPane.leftAnchor="836.0" AnchorPane.topAnchor="27.0">
                <effect>
                   <DropShadow />
                </effect>
@@ -357,7 +368,7 @@
                   </Label>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="1101.0" layoutY="25.0" prefHeight="199.0" prefWidth="266.0" style="-fx-background-color: ffff; -fx-background-radius: 1em;" AnchorPane.leftAnchor="1101.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="25.0">
+            <AnchorPane layoutX="1101.0" layoutY="25.0" prefHeight="199.0" prefWidth="305.0" style="-fx-background-color: ffff; -fx-background-radius: 1em;" AnchorPane.leftAnchor="1101.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="25.0">
                <effect>
                   <DropShadow />
                </effect>
@@ -391,26 +402,37 @@
                   <InnerShadow blurType="GAUSSIAN" radius="4.75" width="0.0" />
                </effect>
             </MenuBar>
-            <AnchorPane cache="true" cacheHint="SPEED" layoutX="219.0" layoutY="232.0" prefHeight="98.0" prefWidth="1056.0" style="-fx-background-color: ffff; -fx-background-radius: 2em;" AnchorPane.leftAnchor="219.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="232.0">
+            <AnchorPane cache="true" cacheHint="SPEED" layoutX="219.0" layoutY="232.0" prefHeight="73.0" prefWidth="1190.0" style="-fx-background-color: ffff; -fx-background-radius: 2em;" AnchorPane.leftAnchor="219.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="232.0">
                <effect>
                   <DropShadow />
                </effect>
                <children>
-                  <Label alignment="CENTER" contentDisplay="TOP" layoutX="382.0" layoutY="6.0" prefHeight="44.0" prefWidth="292.0" text="Ingreso de nuevo paciente" underline="true">
+                  <Label alignment="CENTER" contentDisplay="TOP" layoutX="303.0" layoutY="-3.0" prefHeight="25.0" prefWidth="292.0" text="Ingreso de nuevo paciente" underline="true">
                      <font>
-                        <Font name="Dubai Bold" size="25.0" />
+                        <Font name="Dubai Bold" size="20.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="93.0" fitWidth="111.0" layoutX="289.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="62.0" fitWidth="73.0" layoutX="258.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../recursos/iconos/add_file_100px.png" />
                      </image>
                   </ImageView>
-                  <Label alignment="CENTER" contentDisplay="TOP" layoutX="382.0" layoutY="49.0" prefHeight="44.0" prefWidth="292.0" text="Ficha de Identificación">
+                  <Label alignment="CENTER" contentDisplay="TOP" layoutX="303.0" layoutY="15.0" prefHeight="44.0" prefWidth="292.0" text="1.- Ficha de Identificación">
+                     <font>
+                        <Font name="Dubai Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXButton buttonType="RAISED" layoutX="698.0" layoutY="6.0" prefHeight="62.0" prefWidth="194.0" ripplerFill="BLACK" style="-fx-background-color: F3C3A0;" text="Dar de alta">
                      <font>
                         <Font name="Dubai Bold" size="25.0" />
                      </font>
-                  </Label>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
                </children>
             </AnchorPane>
          </children>
