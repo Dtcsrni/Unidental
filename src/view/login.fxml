@@ -10,7 +10,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.effect.InnerShadow?>
-<?import javafx.scene.effect.Light.Distant?>
 <?import javafx.scene.effect.Lighting?>
 <?import javafx.scene.effect.Reflection?>
 <?import javafx.scene.effect.SepiaTone?>
@@ -25,9 +24,9 @@
    <children>
       <AnchorPane prefHeight="808.0" prefWidth="1280.0">
          <children>
-            <ImageView fitHeight="268.0" fitWidth="281.0" layoutX="510.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="245.0" fitWidth="370.0" layoutX="477.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../recursos/unidental_logo.png" />
+                  <Image url="file:/D:/Documentos/ProyectosJava/Unidental/src/resources/unidental_logo.png" />
                </image>
             </ImageView>
             <MenuBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="26.0" prefWidth="1280.0" style="-fx-background-color: F3C3A0;">
@@ -56,7 +55,7 @@
                <effect>
                   <Reflection topOpacity="0.08" />
                </effect></Label>
-            <TextField alignment="CENTER" layoutX="379.0" layoutY="341.0" prefHeight="100.0" prefWidth="406.0">
+            <TextField fx:id="txtUsuario" alignment="CENTER" layoutX="379.0" layoutY="341.0" prefHeight="100.0" prefWidth="406.0">
                <font>
                   <Font name="Dubai Bold" size="40.0" />
                </font>
@@ -72,7 +71,7 @@
                   <Reflection fraction="0.7" topOpacity="0.09" />
                </effect>
             </Label>
-            <PasswordField alignment="CENTER" layoutX="379.0" layoutY="523.0" prefHeight="100.0" prefWidth="406.0">
+            <PasswordField fx:id="txtPassword" alignment="CENTER" layoutX="379.0" layoutY="523.0" prefHeight="100.0" prefWidth="406.0">
                <font>
                   <Font name="Dubai Bold" size="40.0" />
                </font>
@@ -82,7 +81,7 @@
             </PasswordField>
             <ImageView fitHeight="100.0" fitWidth="98.0" layoutX="14.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../recursos/iconos/conference_96px.png" />
+                  <Image url="file:/D:/Documentos/ProyectosJava/Unidental/src/resources/iconos/conference_96px.png" />
                </image>
                <effect>
                   <Reflection topOpacity="0.1" />
@@ -90,13 +89,13 @@
             </ImageView>
             <ImageView fitHeight="100.0" fitWidth="98.0" layoutX="14.0" layoutY="524.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../recursos/iconos/key_96px.png" />
+                  <Image url="file:/D:/Documentos/ProyectosJava/Unidental/src/resources/iconos/key_96px.png" />
                </image>
                <effect>
                   <Reflection topOpacity="0.1" />
                </effect>
             </ImageView>
-            <Button alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" layoutX="899.0" layoutY="390.0" mnemonicParsing="false" prefHeight="168.0" prefWidth="224.0" text="Entrar" textAlignment="CENTER">
+            <Button fx:id="btnEntrar" alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" layoutX="899.0" layoutY="390.0" mnemonicParsing="false" prefHeight="168.0" prefWidth="224.0" text="Entrar" textAlignment="CENTER">
                <font>
                   <Font name="Dubai Bold" size="50.0" />
                </font>
@@ -105,15 +104,12 @@
                      <bumpInput>
                         <Shadow blurType="GAUSSIAN" height="44.72" radius="26.307499999999997" width="62.51" />
                      </bumpInput>
-                     <light>
-                        <Light.Distant azimuth="245.93" elevation="53.37" />
-                     </light>
                   </Lighting>
                </effect>
             </Button>
             <ImageView fitHeight="82.0" fitWidth="107.0" layoutX="970.0" layoutY="394.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../recursos/iconos/login_48px.png" />
+                  <Image url="file:/D:/Documentos/ProyectosJava/Unidental/src/resources/iconos/login_48px.png" />
                </image>
             </ImageView>
             <ProgressIndicator layoutX="985.0" layoutY="409.0" mouseTransparent="true" prefHeight="112.0" prefWidth="141.0">
@@ -121,24 +117,24 @@
                   <SepiaTone />
                </effect>
             </ProgressIndicator>
-            <Label layoutX="443.0" layoutY="717.0" text="Martes, 14 de marzo de 2020">
+            <Label fx:id="lblFecha" layoutX="443.0" layoutY="717.0" text="Martes, 14 de marzo de 2020">
                <font>
                   <Font name="Dubai Bold" size="30.0" />
                </font>
             </Label>
-            <Label layoutX="1018.0" layoutY="717.0" text="12:00 PM">
+            <Label fx:id="lblHora" layoutX="1018.0" layoutY="717.0" text="12:00 PM">
                <font>
                   <Font name="Dubai Bold" size="30.0" />
                </font>
             </Label>
             <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="965.0" layoutY="721.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../recursos/iconos/watch_48px.png" />
+                  <Image url="file:/D:/Documentos/ProyectosJava/Unidental/src/resources/iconos/watch_48px.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="387.0" layoutY="721.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../recursos/iconos/calendar_48px.png" />
+                  <Image url="file:/D:/Documentos/ProyectosJava/Unidental/src/resources/iconos/calendar_48px.png" />
                </image>
             </ImageView>
          </children>

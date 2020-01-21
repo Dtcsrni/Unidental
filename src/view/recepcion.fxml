@@ -259,7 +259,7 @@
                      <graphic>
                         <ImageView fitHeight="95.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" translateX="-15.0">
                            <image>
-                              <Image url="@../recursos/iconos/add_file_100px.png" />
+                              <Image url="file:/D:/Documentos/ProyectosJava/Unidental/src/resources/iconos/add_file_100px.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -275,7 +275,7 @@
                      <graphic>
                         <ImageView fitHeight="95.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" translateX="-15.0">
                            <image>
-                              <Image url="@../recursos/iconos/search_property_100px.png" />
+                              <Image url="file:/D:/Documentos/ProyectosJava/Unidental/src/resources/iconos/search_property_100px.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -301,7 +301,7 @@
                   </Label>
                   <ImageView fitHeight="125.0" fitWidth="127.0" layoutX="24.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../recursos/iconos/front_desk_96px.png" />
+                        <Image url="file:/D:/Documentos/ProyectosJava/Unidental/src/resources/iconos/front_desk_96px.png" />
                      </image>
                   </ImageView>
                </children>
@@ -326,7 +326,7 @@
                   </Label>
                   <ImageView fitHeight="115.0" fitWidth="97.0" layoutX="105.0" layoutY="43.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../recursos/fotosPersonal/doctor-javier-hurtado.jpg" />
+                        <Image url="file:/D:/Documentos/ProyectosJava/Unidental/src/resources/fotosPersonal/doctor-javier-hurtado.jpg" />
                      </image>
                   </ImageView>
                </children>
@@ -338,7 +338,7 @@
                <children>
                   <ImageView fitHeight="200.0" fitWidth="281.0" layoutX="19.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../recursos/unidental_logo.png" />
+                        <Image url="file:/D:/Documentos/ProyectosJava/Unidental/src/resources/unidental_logo.png" />
                      </image>
                   </ImageView>
                </children>
@@ -358,7 +358,7 @@
                   </Label>
                   <ImageView fitHeight="73.0" fitWidth="79.0" layoutX="90.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../recursos/iconos/clock_100px.png" />
+                        <Image url="file:/D:/Documentos/ProyectosJava/Unidental/src/resources/iconos/clock_100px.png" />
                      </image>
                   </ImageView>
                   <Label layoutX="69.0" layoutY="89.0" text="12:00 PM">
@@ -412,9 +412,9 @@
                         <Font name="Dubai Bold" size="20.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="62.0" fitWidth="73.0" layoutX="258.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="63.0" fitWidth="65.0" layoutX="258.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../recursos/iconos/add_file_100px.png" />
+                        <Image url="file:/D:/Documentos/ProyectosJava/Unidental/src/resources/iconos/add_file_100px.png" />
                      </image>
                   </ImageView>
                   <Label alignment="CENTER" contentDisplay="TOP" layoutX="303.0" layoutY="15.0" prefHeight="44.0" prefWidth="292.0" text="1.- Ficha de Identificación">
