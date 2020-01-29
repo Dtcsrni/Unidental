@@ -114,7 +114,7 @@ public class paciente {
     public String getEdad() {
         return edad.get();
     }
-<<<<<<< HEAD
+
     public void setEdad(String edad1){
         this.edad = new SimpleStringProperty(edad1);
     }
