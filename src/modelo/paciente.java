@@ -130,7 +130,7 @@ public class paciente {
     public String setFechaNacimiento(String fechaNacimiento1){
         this.fechaNacimiento = new SimpleStringProperty(fechaNacimiento1);
     }
-    public String getlugarNacimiento(){
+    public String getLugarNacimiento(){
         return lugarNacimiento.get();
     }
     public void setLugarNacimiento(String lugarNacimiento1){
@@ -142,23 +142,66 @@ public class paciente {
     public void setDomicilioCalle(String domicilioCalle1){
         this.domicilioCalle = new SimpleStringProperty(domicilioCalle1);
     }
-
-
-=======
->>>>>>> origin/master
-
-    public void setProgramaEstudios(String programaEstudios) {
-        this.programaEstudios = new SimpleStringProperty(programaEstudios);
+    public String getDomicilioNumero(){
+        return domicilioNumero.get();
     }
-
-    public String getCorreo() {
-        return correo.get();
+    public void setDomicilioNumero(String domicilioNumero1){
+        this.domicilioNumero = new SimpleStringProperty(domicilioNumero1);
     }
-
-    public void setCorreo(String correo) {
-        this.correo = new SimpleStringProperty(correo);
+    public String getDomicilioColonia(){
+        return domicilioColonia.get();
     }
-
+    public void setDomicilioColonia(String domicilioColonia1){
+        this.domicilioColonia = new SimpleStringProperty(domicilioColonia1);
+    }
+    public String getDomicilioCiudad(){
+        return domicilioCiudad.get();
+    }
+    public void setDomicilioCiudad(String domicilioCiudad1){
+        this.domicilioCiudad = new SimpleStringProperty(domicilioCiudad1);
+    }
+    public String getTelefono(){
+        return telefono.get();
+    }
+    public void setTelefono(String telefono1){
+        this.telefono = new SimpleStringProperty(telefono1);
+    }
+    public String getNombreTutor(){
+        return nombreTutor.get();
+    }
+    public void setNombreTutor(String nombreTutor1){
+        this.nombreTutor = new SimpleStringProperty(nombreTutor1);
+    }
+    public String getMaximoEstudio(){
+        return maximoEstudio.get();
+    }
+    public void setMaximoEstudio(String maximoEstudio1){
+        this.maximoEstudio = new SimpleStringProperty(maximoEstudio1);
+    }
+    public String getOcupacion(){
+        return ocupacion.get();
+    }
+    public void setOcupacion(String ocupacion1){
+        this.ocupacion = new SimpleStringProperty(ocupacion1);
+    }
+    public String getEstadoCivil(){
+        return estadoCivil.get();
+    }
+    public void setEstadoCivil(String estadoCivil1){
+        this.estadoCivil = new SimpleStringProperty(estadoCivil1);
+    }
+    public String getDerechoHabiencia(){
+        return derechoHabiencia.get();
+    }
+    public void setDerechoHabiencia(String derechoHabiencia1){
+        this.derechoHabiencia = new SimpleStringProperty(derechoHabiencia1);
+    }
+    public String getMotivoConsulta(){
+        return motivoConsulta.get();
+    }
+    public void setMotivoConsulta(String motivoConsulta1){
+        this.motivoConsulta = new SimpleStringProperty(motivoConsulta1);
+    }
 
 
 
