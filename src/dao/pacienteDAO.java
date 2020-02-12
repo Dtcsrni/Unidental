@@ -1,26 +1,17 @@
 
 package dao;
 
-import javafx.scene.control.Alert;
-import modelo.conexionBD;
+import modelo.Paciente;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.Date;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+public interface pacienteDAO {
 
-public class pacienteDAO {
 
-    public pacienteDAO() {
-        
-    }
     
     public boolean registrarPaciente(String id_paciente, String nombre, String apellidoPat, String apellidoMat, String edad, String sexo,
                                      String fechaNacimiento, String lugarNacimiento, String domicilioCalle, String domicilioNumero, String domicilioColonia,
                                      String domicilioCiudad, String telefono, String nombreTutor, String maximoEstudio, String ocupacion, String estadoCivil,
-                                     String derechoHabiencia, String motivoConsulta)
-    {
+                                     String derechoHabiencia, String motivoConsulta);
+    /*{
         conexionBD con = new conexionBD();//se crea el objeto de la conexión
         int q;
         try {
@@ -29,9 +20,9 @@ public class pacienteDAO {
              return false;
             }else{
                q = con.ACTUALIZAR(
-             "INSERT INTO pacientes (id_paciente,nombre,apellidoPat,apellidoMat,edad,sexo,fechaNacimiento,lugarNacimiento,domicilioNumero,domicilioColonia,domicilioCiudad,telefono,nombreTutor,maximoEstudio,ocupacion," +
+             "INSERT INTO pacientes (id_paciente,nombre,apellidoPat,apellidoMat,edad,sexo,fechaNacimiento,lugarNacimiento,domicilioCalle,domicilioNumero,domicilioColonia,domicilioCiudad,telefono,nombreTutor,maximoEstudio,ocupacion," +
                      "estadoCivil,derechoHabiencia,motivoConsulta) " +
-                     "VALUES ('"+id_paciente+"','"+nombre+"','"+apellidoPat+"','"+apellidoMat+"','"+edad+"','"+sexo+"','"+fechaNacimiento+"','"+lugarNacimiento+"','"+domicilioNumero+"','"+domicilioColonia+"','"+domicilioCiudad
+                     "VALUES ('"+id_paciente+"','"+nombre+"','"+apellidoPat+"','"+apellidoMat+"','"+edad+"','"+sexo+"','"+fechaNacimiento+"','"+lugarNacimiento+"','"+domicilioCalle+"','"+domicilioNumero+"','"+domicilioColonia+"','"+domicilioCiudad
                      +"','"+telefono+"','"+nombreTutor+"','"+maximoEstudio+"','"+ocupacion+"','"+estadoCivil+"','"+derechoHabiencia+"','"+motivoConsulta+"')");
                if(q==0) 
                  return false;
@@ -44,9 +35,9 @@ public class pacienteDAO {
         }
         
         return true;
-    }
+    }*/
     
-     public modelo.paciente buscarAlumno(String Id_User){
+     public Paciente buscarPacienteID(String id_paciente);/*{
         conexionBD con = new conexionBD();
          modelo.alumno usr = null;
         int q;
@@ -73,9 +64,9 @@ public class pacienteDAO {
         }
         
         return usr;
-    }
+    }*/
      
-     public boolean actualizarAlumno(String Id_User, String Nombre,String ApellidoPat,String ApellidoMat,String CorreoAlum,String CarreraAlum){
+     public boolean actualizarPaciente(String Id_User, String Nombre,String ApellidoPat,String ApellidoMat,String CorreoAlum,String CarreraAlum);/*{
         conexionBD con = new conexionBD();
         int q;
         try {
@@ -95,6 +86,6 @@ public class pacienteDAO {
         }
         
         return true;
-    }
+    }*/
     
 }

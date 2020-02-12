@@ -1,17 +1,11 @@
 
 package modelo;
 
-import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.LongProperty;
-import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.SimpleLongProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
-import java.util.Date;
 
-
-public class paciente {
+public class Paciente {
     //Se definen las variables del singleton
     private StringProperty id_paciente;
     private StringProperty nombre;
@@ -32,9 +26,9 @@ public class paciente {
     private StringProperty estadoCivil;
     private StringProperty derechoHabiencia;
     private StringProperty motivoConsulta;
-    private static paciente usr;
+    private static Paciente usr;
         //función que asigna las variables provenientes de BD a las variables locales para el objeto de tipo paciente
-    public paciente(String id_paciente1, String nombre1, String apellidoPat1, String apellidoMat1, String edad1, String sexo1,
+    public Paciente(String id_paciente1, String nombre1, String apellidoPat1, String apellidoMat1, String edad1, String sexo1,
                     String fechaNacimiento1, String lugarNacimiento1, String domicilioCalle1, String domicilioNumero1, String domicilioColonia1,
                     String domicilioCiudad1, String telefono1, String nombreTutor1, String maximoEstudio1, String ocupacion1, String estadoCivil1,
                     String derechoHabiencia1, String motivoConsulta1) {
@@ -62,7 +56,7 @@ public class paciente {
     }
 
 
-
+/*  Implementación de singleton para sesión
     public static paciente getInstanceUser(String id_paciente1, String nombre1, String apellidoPat1, String apellidoMat1, String edad1, String sexo1,
                                            String fechaNacimiento1, String lugarNacimiento1, String domicilioCalle1, String domicilioNumero1, String domicilioColonia1,
                                            String domicilioCiudad1, String telefono1, String nombreTutor1, String maximoEstudio1, String ocupacion1, String estadoCivil1,
@@ -78,6 +72,7 @@ public class paciente {
 
         return usr;//se devuelve el objeto de tipo paciente
     }
+    */
         //Implementación de get y set para cada valor (encapsulamiento)
     public String getId_paciente() {
         return id_paciente.get();
